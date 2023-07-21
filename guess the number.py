@@ -44,7 +44,7 @@ def check_answer():
     c = input("Do you want to play again?    Type 'yes' or 'no' \n")
     if c == 'yes':
         print("")
-        check_answer(number)
+        check_answer()
     else:
         print("Thank You for using our game :)")
         exit()

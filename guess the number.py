@@ -41,6 +41,7 @@ def check_answer(number):
             print("So Sorry!! You are out of chances. Please try again next time :)")
     c = input("Do you want to play again?    Type 'yes' or 'no' \n")
     if c == 'yes':
+        print("")
         check_answer(number)
     else:
         print("Thank You for using our game :)")

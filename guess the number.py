@@ -1,7 +1,7 @@
 from random import randint
 
 
-def check_answer(number):
+def check_answer():
     print("Welcome to the number guessing game")
     print("Computer has chosen a number between 1-100. GUESS IT 👍")
     print("Easy --> 15 Chances || Medium --> 10 Chances || Hard --> 5 Chances")
@@ -16,6 +16,8 @@ def check_answer(number):
     else:
         n = 15
         print("So Sorry! You have not entered a valid statement!! We automatically took the input as 'easy'")
+
+    number = randint(1,100)
 
     for i in range(n):
         guess = int(input("Make a guess: "))
@@ -48,6 +50,4 @@ def check_answer(number):
         exit()
 
 
-
-number = randint(1,100)
-check_answer(number)
+check_answer()
